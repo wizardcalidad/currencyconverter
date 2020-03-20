@@ -1,0 +1,9 @@
+body {
+    background-image: url(../img/bottle.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+
+.space {
+    margin-top:80px;
+   }

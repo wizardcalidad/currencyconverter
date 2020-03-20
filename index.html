@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Naira Converter</title> 
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+ 
+
+  <div class="row space">
+    
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+  </div>
+ <div class="col-md-4">
+  <div class="card space" style="height:500px; width: 500px; background-color:darkgoldenrod;">
+    <h2 class="text-center text-white"style="font-family:Tahoma; font-weight: bolder; padding-top:30px;"> Money Converter App </h2>
+  </br></br>
+    <div class="card-body">
+    
+    <form name="currencyConversion" method="POST" action="">
+    <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Convert from:</span>
+    </div>
+      <select class="custom-select" id="currency">
+        <option value="dollar">Dollar</option>
+        <option value="euros">Euros</option>
+        <option value="naira">Naira</option>
+        <option value="pounds">Pounds</option>
+        <option value="yuan">Chineese Yen</option>
+        <option value="rupees">Indian Rupees</option>
+      <option value="bitcoin">Bitcoin</option>
+      </select>
+    </div>
+  </br>
+   <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Conversion Amount</span>
+    </div>
+    <input type="text" class="form-control" name="amount" id="amount" required>
+  </div>
+</br>
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Convert to:</span>
+  </div>
+    <select class="custom-select" id="newCurrency">
+      <option value="dollar">Dollar</option>
+      <option value="euros">Euros</option>
+      <option value="naira">Naira</option>
+      <option value="pounds">Pounds</option>
+      <option value="yuan">Chineese Yen</option>
+      <option value="rupees">Indian Rupees</option>
+    <option value="bitcoin">Bitcoin</option>
+    </select>
+  </div>
+  </br>
+  </br>
+  <button type="button" class="btn" style="background-color:dodgerblue;" onclick="convert()">Convert</button>
+</br></br>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">converted currency</span>
+  </div>
+<p id="demo" class="form-control text-success"></p>
+</div>
+ </form>
+  
+  </div>
+  </div>
+ </div>
+</div>
+</div>
+</body>
+
+</html>
+<!-- My JS -->
+<script src="index.js" type="text/javascript"></script>
+
